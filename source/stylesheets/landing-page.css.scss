@@ -12,9 +12,19 @@ $project-screenshot-left-margin: -22px;
 
 @import "theme";
 
+
+.hold_it_up {
+  height: 340px;
+}
+
 .profile-row {
   @include grid-row;
   @include panel($bio-background-color);
+  border-radius: 40px;
+  border: none;
+  border-style: none;
+  border-width: 0;
+  display: none;
 }
 
 .profile {

@@ -13,3 +13,8 @@
 //= require foundation/foundation.tooltips
 //= require foundation/foundation.topbar
 //= require foundation/foundation.interchange
+
+
+$(document).ready(function() {
+  $( ".profile-row" ).fadeIn( 1000 );
+});
