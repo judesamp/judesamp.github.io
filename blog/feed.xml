@@ -5,41 +5,29 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T05:00:00Z</updated>
+  <updated>2014-03-14T04:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Lorem Ipsum</title>
-    <link rel="alternate" href="/blog/2012/01/01/example-article.html"/>
-    <id>/blog/2012/01/01/example-article.html</id>
-    <published>2012-01-01T05:00:00Z</published>
-    <updated>2012-01-01T05:00:00Z</updated>
+    <title>Choosing the Ironyard</title>
+    <link rel="alternate" href="/blog/2014/03/14/choosing-the-ironyard.html"/>
+    <id>/blog/2014/03/14/choosing-the-ironyard.html</id>
+    <published>2014-03-14T04:00:00Z</published>
+    <updated>2014-03-14T04:00:00Z</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <summary type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
+    <summary type="html">&lt;p&gt;So. About my first post. After a reread, I realized I’d fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;So. About my first post. After a reread, I realized I&amp;rsquo;d fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing for me. I want to be known; it&amp;rsquo;s why I write. There&amp;rsquo;s part of me that wants to connect. But another part of me is terrified of being exposed in this way—even if I&amp;rsquo;m the one initiating the exposure. But these days, I&amp;rsquo;m all about doing things differently. That means that it&amp;rsquo;s time for specifics.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget lorem quis eros dictum dictum a vitae purus. Quisque non elit sit amet turpis ullamcorper blandit. 
-Suspendisse vitae turpis et enim feugiat ullamcorper at non turpis. Vestibulum posuere, eros eget vulputate faucibus, metus massa congue velit, non pulvinar tortor risus 
-ut enim. Pellentesque lectus ligula, vehicula luctus volutpat in, convallis quis ante. Proin non odio eu orci feugiat feugiat. Mauris molestie nisi non venenatis molestie. 
-Pellentesque facilisis eros ut ultrices ultrices.
-</summary>
-    <content type="html">&lt;p&gt;This is an example article. You probably want to delete it and write your own articles!&lt;/p&gt;
+&lt;h3&gt;Why the Iron Yard?&lt;/h3&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget lorem quis eros dictum dictum a vitae purus. Quisque non elit sit amet turpis ullamcorper blandit. 
-Suspendisse vitae turpis et enim feugiat ullamcorper at non turpis. Vestibulum posuere, eros eget vulputate faucibus, metus massa congue velit, non pulvinar tortor risus 
-ut enim. Pellentesque lectus ligula, vehicula luctus volutpat in, convallis quis ante. Proin non odio eu orci feugiat feugiat. Mauris molestie nisi non venenatis molestie. 
-Pellentesque facilisis eros ut ultrices ultrices.
-&lt;/p&gt;
-&lt;pre class="highlight ruby"&gt;&lt;span class="k"&gt;class &lt;/span&gt;&lt;span class="nc"&gt;Hello&lt;/span&gt;
-  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt;
-    &lt;span class="s2"&gt;&amp;quot;I am a code segment!&amp;quot;&lt;/span&gt;
-  &lt;span class="k"&gt;end&lt;/span&gt;
-&lt;span class="k"&gt;end&lt;/span&gt;
-&lt;/pre&gt;
-&lt;p&gt;Nam commodo hendrerit scelerisque. Ut tristique lacus lobortis neque rhoncus, ut tempor enim mattis. Suspendisse vel eleifend quam. Suspendisse luctus nisl eget elit euismod, 
-in sodales metus blandit. Mauris nisi eros, venenatis a sagittis id, dictum id arcu. Nam tempus pulvinar ante at semper. Donec tincidunt dolor ac sem tempor laoreet.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d like to say I chose The Iron Yard after extensive research and forethought. And I suppose that, in one sense, I did. I&amp;rsquo;ve made a hobby of reading about dev bootcamps—from Dev BootCamp in San Francisco to Bitmaker Labs in Toronto to CodeFellows in Seattle to the Nashville Software School. I mean, I was a licensed lurker. So I guess you could say I knew the lay of the land. But when it came to actually choosing The Iron Yard, I made the decision to apply about two minutes after I found The Iron Yard&amp;rsquo;s website. There were basically two crucial factors in making that choice. First, The Iron Yard was opening a coding academy in Atlanta. I could attend without having to pay for a place to stay. That meant I could almost afford to do it:) Second, The Iron Yard offers a guarantee: a job within six months or your money back. It&amp;rsquo;s nice to have a partner in the boat with you, partcularly if you&amp;rsquo;re setting out for parts unknown.&lt;/p&gt;
+
+&lt;p&gt;And yeah, I read more about The Iron Yard before actually applying, enough to put myself at ease with the idea of taking this leap. But the truth is that I was ready to jump—and the Iron Yard seemed like a soft landing spot:) &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to delve deeper in my next post, including taking a look at what scares me about the road ahead. So, more specifics.&lt;/p&gt;
 </content>
   </entry>
 </feed>
