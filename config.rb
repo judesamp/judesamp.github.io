@@ -20,7 +20,7 @@ activate :sprockets
 ####
 
 set :full_name, "Jeremy Samples"
-set :city, "Atlanta, Goergia"
+set :city, "Atlanta, Georgia"
 set :resume, nil # Set to filename of resume PDF in source directory.
 set :google_analytics_tracking_id, "UA-111111111-11"
 
