@@ -5,10 +5,27 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-03-20T04:00:00Z</updated>
+  <updated>2014-03-31T04:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The Ironyard&amp;#58; Day One</title>
+    <link rel="alternate" href="/blog/2014/03/31/the-ironyard-day-one.html"/>
+    <id>/blog/2014/03/31/the-ironyard-day-one.html</id>
+    <published>2014-03-31T04:00:00Z</published>
+    <updated>2014-03-31T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;Two weeks of crazy gave way to day one at The Iron Yard. Like any first day, it was nerve wracking—new spaces, new people, new rules, new concepts. In our Rails course, we installed everything and built a guessing game. You can see my results &lt;a href="https://gist.github.com/judesamp/9900166"&gt;here&lt;/a&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Two weeks of crazy gave way to day one at The Iron Yard. Like any first day, it was nerve wracking—new spaces, new people, new rules, new concepts. In our Rails course, we installed everything and built a guessing game. You can see my results &lt;a href="https://gist.github.com/judesamp/9900166"&gt;here&lt;/a&gt;.   &lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll admit that I&amp;rsquo;m a little flummoxed about what to say after day one. (That&amp;rsquo;s right, flummoxed!) For the first time in a long time, it&amp;rsquo;s hard to predict the days and weeks ahead. I find myself forced into a state of constant alertness. It&amp;rsquo;s not a natural state for me—and I think that&amp;rsquo;s good.&lt;/p&gt;
+
+&lt;p&gt;More later.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The Fear&amp;#58; Changing Careers</title>
     <link rel="alternate" href="/blog/2014/03/20/the-fear-changing-careers.html"/>
