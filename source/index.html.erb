@@ -1,31 +1,61 @@
-<div class="hold_it_up">
-  <div class="profile-row">
-    <div class="profile">
-      <%= image_tag '/images/Locator.png' %>
-    </div>
+<div class="section-row projects_row">
+  <div class="section-heading">
+    <h2 class="strike">
+    <span>Featured Projects</span>
+    </h2>
+  </div>
+  
+  <div class='large-4 medium-4 columns'>
+    <% project = data.projects.select(&:featured).first %>
+      <h3 class="project_name"><%= link_to project.name, 'portfolio.html' %></h3>
+      <%= link_to(image_tag(project.screenshot, class: 'project_image'), 'portfolio.html') %>
+  </div>
 
-    <div class="bio">
-      <h2>Hello there! I'm <%= full_name %>.</h2>
-      <h3>I'm a full-stack web developer living in <%= city %>.</h3>
-      <!-- Short bio about yourself, your skills, whether you're looking for work or not, etc. -->
-      <p><%= lorem.sentences 5 %></p>
-    </div>
+  <div class='large-4 medium-4 columns'>
+    <% project = data.projects.select(&:featured)[1] %>
+      <h3 class="project_name"><%= link_to project.name, 'portfolio.html' %></h3>
+      <%= link_to(image_tag(project.screenshot, class: 'project_image'), 'portfolio.html') %>
+  </div>
+
+  <div class='large-4 medium-4 columns'>
+    <% project = data.projects.select(&:featured)[2] %>
+      <h3 class="project_name"><%= link_to project.name, 'portfolio.html' %></h3>
+      <%= link_to(image_tag(project.screenshot, class: 'project_image'), 'portfolio.html') %>
   </div>
 </div>
 
-<div class="featured-element-row">
+
+<div class="section-row blog_row">
+
+
   <section class="latest-from-blog">
-    <h2>Latest from the blog</h2>
-    <h3><%= link_to page_articles.first.title, page_articles.first %></h3>
 
-    <p><%= page_articles.first.summary %></p>
+    <div class="section-row">
+      <div class="section-heading">
+        <h2 class="strike2">
+          <span>Latest from the blog</span>
+        </h2>
+      </div>
+    </div>
+    
+    <div class='large-6 medium-6 columns'>
+
+      <h3><%= link_to page_articles.first.title, page_articles.first %></h3>
+
+      <p><%= page_articles.first.summary %></p>
+
+    </div>
+
+    <div class='large-6 medium-6 columns'>
+
+      <h3><%= link_to page_articles.second.title, page_articles.second %></h3>
+
+      <p><%= page_articles.second.summary %></p>
+
+    </div>
+    
   </section>
 
-  <section class="featured-project">
-    <% project = data.projects.select(&:featured).first %>
 
-    <h2>Featured project</h2>
-    <h3><%= link_to project.name, 'portfolio.html' %></h3>
-    <%= link_to(image_tag(project.screenshot), 'portfolio.html') %>
-  </section>
+
 </div>

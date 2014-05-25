@@ -6,19 +6,19 @@
   description: |
                  The Ironyard Academy is a full-time, twelve week program that turns you into a web developer.
 - 
-  name: RunningLog
+  name: Running Log
   url: http://mighty-wildwood-9113.herokuapp.com
   screenshot: running_log.png
-  featured: false
+  featured: true
   description: |
                  This is a very long description.
 
                  It has multiple paragraphs.    
 -
-  name: Family Faith Steps 1
+  name: Family Faith Steps
   url: https://itunes.apple.com/us/app/family-faith-steps-1/id824498570?mt=8
   screenshot: family_fs.png
-  featured: false
+  featured: true
   description: |
                  This is a very long description.
 
