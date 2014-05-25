@@ -5,10 +5,42 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-03-14T04:00:00Z</updated>
+  <updated>2014-03-20T04:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The Fear&amp;#58; Changing Careers</title>
+    <link rel="alternate" href="/blog/2014/03/20/the-fear-changing-careers.html"/>
+    <id>/blog/2014/03/20/the-fear-changing-careers.html</id>
+    <published>2014-03-20T04:00:00Z</published>
+    <updated>2014-03-20T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p class="first"&gt;
+So, I’m afraid. I wish I wasn’t, but there it is. I’m at the precipice now, the jumping off point. &lt;a href="http://theironyard.com/academy/rails-engineering/"&gt;Rails bootcamp&lt;/a&gt; starts in under two weeks. Several times lately, I’ve been reminded: the mind can be a trap. I keep thinking about all of the decisions...&lt;/p&gt;</summary>
+    <content type="html">&lt;p class='first'&gt;
+So, I&amp;rsquo;m afraid. I wish I wasn&amp;rsquo;t, but there it is. I&amp;rsquo;m at the precipice now, the jumping off point. &lt;a href="http://theironyard.com/academy/rails-engineering/"&gt;Rails bootcamp&lt;/a&gt; starts in under two weeks. Several times lately, I&amp;rsquo;ve been reminded: the mind can be a trap. I keep thinking about all of the decisions that led me here; I can&amp;rsquo;t change them, but part of me desperately wishes I could—just a few of them, really. What if I&amp;rsquo;d made this decision five years ago, ten years ago? My life would be set, right? What if I&amp;rsquo;d been smarter, stronger, and better all along? And yeah, that&amp;rsquo;s the fear (and doubt) talking. Because I&amp;rsquo;m actually pumped about the road ahead. I want to go to dev bootcamp. I want to learn Rails (and more!). I want to spend more time coding.
+&lt;/p&gt;
+
+&lt;p&gt;So what&amp;rsquo;s going on here? What am I afraid of? And yes, I&amp;rsquo;m going to do my best to be &lt;a href="/choosing-the-iron-yard"&gt;very specific&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;For the first time in a long time, I&amp;rsquo;m afraid of tomorrow. It&amp;rsquo;s uncertain. It&amp;rsquo;s unmapped. I&amp;rsquo;ve been doing the same thing for more than ten years. I&amp;rsquo;m a creature of habits. Change is scary.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m afraid of the upset this could cause my family. I&amp;rsquo;m a new dad. My amazing daughter is eight months old. My wife is awesome—and so supportive. And I know the road I&amp;rsquo;ve chosen is going to mean new difficulties for them. Yes, I hope to build a better future for all of us, but I worry about the challenges my family will face in the present.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m afraid of the test. Am I good enough? Smart enough? Can I face the things I&amp;rsquo;m not good at—public speaking, taking criticism, whatever parts of coding I happen to be particularly horrible at, etcetera? There are moments when I know that &amp;ldquo;yes&amp;rdquo; is the answer to all of these questions, when I know I can face the test ahead, but the self-doubt is never far away.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m afraid of being broke. That&amp;rsquo;s all I&amp;rsquo;ll say about that:)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;Obviously, this is an incomplete list, but I think I&amp;rsquo;ve hit the highlights of my own personal mind trap. The key, I guess, is not getting stuck in that trap—and getting out when you are stuck. Because I suspect that the fears themselves aren&amp;rsquo;t the problem; the problem is going round and round in the accompanying anxiety. &lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s where I&amp;rsquo;m at. Trying not to get stuck. Trying not to fixate. And though I don&amp;rsquo;t have any miracle fixes figured out, I&amp;rsquo;ve been running across a nice formulation on twitter:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fun == hard returns true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;More and more, I think this is one of the secrets of life that I&amp;rsquo;ve yet to learn. Hard (and scary) ain&amp;rsquo;t the end of the world.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Choosing the Ironyard</title>
     <link rel="alternate" href="/blog/2014/03/14/choosing-the-ironyard.html"/>
