@@ -1,3 +1,15 @@
 <% wrap_layout :layout do %>
-  <%= partial '/blog/article', :locals => {:article => current_article, :digest => false} %>
+  <div class="blog_image">
+    <div class="blog_image_row">
+      <div class="text_holder">
+        <h1 class="blog_title">My Blog</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="main blog_main">
+    <div class="content">
+      <%= partial '/blog/article', :locals => {:article => current_article, :digest => false} %>
+    </div>
+  </div>
 <% end %>

@@ -2,8 +2,10 @@
 title: Choosing the Ironyard
 date: 2014-03-14
 tags: 
-- example
-- latin
+- The Ironyard
+- developer
+- bootcamp
+- coding
 ---
 
 So. About my first post. After a reread, I realized I'd fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing for me. I want to be known; it's why I write. There's part of me that wants to connect. But another part of me is terrified of being exposed in this way—even if I'm the one initiating the exposure. But these days, I'm all about doing things differently. That means that it's time for specifics.

@@ -9,9 +9,8 @@ tags:
 - fear
 ---
 
-<p class='first'>
+
 So, I'm afraid. I wish I wasn't, but there it is. I'm at the precipice now, the jumping off point. <a href="http://theironyard.com/academy/rails-engineering/">Rails bootcamp</a> starts in under two weeks. Several times lately, I've been reminded: the mind can be a trap. I keep thinking about all of the decisions that led me here; I can't change them, but part of me desperately wishes I could—just a few of them, really. What if I'd made this decision five years ago, ten years ago? My life would be set, right? What if I'd been smarter, stronger, and better all along? And yeah, that's the fear (and doubt) talking. Because I'm actually pumped about the road ahead. I want to go to dev bootcamp. I want to learn Rails (and more!). I want to spend more time coding.
-</p>
 
 So what's going on here? What am I afraid of? And yes, I'm going to do my best to be <a href="/choosing-the-iron-yard">very specific</a>.
 <ul>
