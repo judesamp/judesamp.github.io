@@ -44,3 +44,30 @@ $project-screenshot-left-margin: -22px;
     @include grid-column(8);
   }
 }
+
+.portfolio_image { 
+  background: url(../images/keyboard.JPG) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100px;
+}
+
+.portfolio_image_row {
+  background: rgba(130,183,190,0.82);
+  overflow: hidden;
+  height: 100px;
+  z-index: 2;
+  border-bottom: 5px solid rgba(0,0,0,0.1);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.portfolio_title {
+  color: white;
+  margin-top: 20px;
+}
+
+.portfolio_main {
+  margin-top: 10px !important;
+}
