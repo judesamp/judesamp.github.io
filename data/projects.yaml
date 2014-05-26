@@ -11,15 +11,11 @@
   screenshot: running_log.png
   featured: true
   description: |
-                 This is a very long description.
-
-                 It has multiple paragraphs.    
+                 A running log I built for my own use. It helps runners track their runs and progress over time. I'm hoping to include more features soon, including adding goals and multiple ways to chart statistics.
 -
   name: Family Faith Steps
   url: https://itunes.apple.com/us/app/family-faith-steps-1/id824498570?mt=8
   screenshot: family_fs.png
   featured: true
   description: |
-                 This is a very long description.
-
-                 It has multiple paragraphs.    
+                 A mobile app I built for a former employer using Sencha Touch 2 and Phonegap. It's designed to help families spend quality time together—studying the Bible, doing ministry, and just having fun!
