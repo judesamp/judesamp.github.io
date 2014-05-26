@@ -5,10 +5,122 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-05-02T04:00:00Z</updated>
+  <updated>2014-05-26T17:42:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>A Brief Introduction to RSpec</title>
+    <link rel="alternate" href="/blog/2014/05/26/rspec-overview.html"/>
+    <id>/blog/2014/05/26/rspec-overview.html</id>
+    <published>2014-05-26T17:42:00Z</published>
+    <updated>2014-05-26T17:42:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I was tasked with putting together an introductory piece on RSpec for The Ironyard’s &lt;a href="https://github.com/theironyard/Ruby-Enchiridion"&gt;Ruby-Enchiridion&lt;/a&gt; this weekend. This is what I came up with. Enjoy!&lt;/p&gt;
+
+&lt;h4&gt;Rspec&lt;/h4&gt;
+
+&lt;p&gt;RSpec is a testing tool for the Ruby programming language. RSpec is designed to help programmers...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;I was tasked with putting together an introductory piece on RSpec for The Ironyard&amp;rsquo;s &lt;a href="https://github.com/theironyard/Ruby-Enchiridion"&gt;Ruby-Enchiridion&lt;/a&gt; this weekend. This is what I came up with. Enjoy!&lt;/p&gt;
+
+&lt;h4&gt;Rspec&lt;/h4&gt;
+
+&lt;p&gt;RSpec is a testing tool for the Ruby programming language. RSpec is designed to help programmers do Test-Driven Development (TDD). RSpec is a commonly used testing tool in the Rails community.&lt;/p&gt;
+
+&lt;h4&gt;Basic RSpec Setup Instructions for Rails&lt;/h4&gt;
+
+&lt;ol class="markdown_ordered_list"&gt;
+  &lt;li&gt;Add Gem to gemfile (in both developement and test groups)
+    &amp;ldquo;`
+    group :development, :test do
+      gem &amp;lsquo;rspec-rails&amp;rsquo;, &amp;lsquo;~&gt; 3.0.0.beta&amp;rsquo;
+    end
+    &amp;rdquo;`
+  &lt;/li&gt;
+  &lt;li&gt;Run &amp;lsquo;bundle install&amp;rsquo;&lt;/li&gt;
+  &lt;li&gt;Initialize spec directory by running &amp;lsquo;rails generate rspec:install&amp;rsquo; &amp;mdash; this will create a spec directory and put a spec_helper.rb file inside of it. This spec helper file contains setup and configuration for rspec.&lt;/li&gt;
+  &lt;li&gt;In the file where you&amp;rsquo;ll be writing tests (users_controller_spec.rb, for instance), type &amp;ldquo;require &amp;lsquo;spec_helper&amp;rsquo;&amp;rdquo; at the top of the file.&lt;/li&gt;
+  &lt;li&gt;Now you&amp;rsquo;re ready to start writing tests. (See tips or resources for more detailed setup info.)&lt;/li&gt;
+  &lt;li&gt;Runs the tests with &amp;lsquo;rake spec.&amp;rsquo; This will run all the tests in the spec directory. To run more specific tests, drill down with something like &amp;lsquo;rake spec/controllers/users_controller_spec.rb&amp;rsquo; You can also use &amp;lsquo;rspec&amp;rsquo; in place of the rake command.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Tips&lt;/h4&gt;
+
+&lt;p&gt;• Be sure you close all of your &amp;lsquo;do-end&amp;rsquo; blocks. Their lack can cause all sorts of fun confusion.&lt;/p&gt;
+
+&lt;p&gt;• When testing Rails controllers, the :assigns in &lt;/p&gt;
+&lt;pre class="highlight text"&gt;expect(:assigns).to eq &amp;lt;value&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;is basically equivalent to the variable @assigns in whatever action you&amp;rsquo;re testing&lt;/p&gt;
+
+&lt;p&gt;• Test one thing at a time! Each test should have only one expect or should statement.&lt;/p&gt;
+
+&lt;p&gt;• Move repeated setup statements to the top of a block and make them generally available. Here is an example (notice the let statement at the top, making a user available during each of the tests nested within this block): &lt;/p&gt;
+&lt;pre class="highlight text"&gt;describe EventsController do
+
+  let(:user) { FactoryGirl.create(:user) }
+
+  describe &amp;quot;GET #index&amp;quot; do
+
+    it &amp;quot;assigns collection of events&amp;quot; do
+      login(user)
+      event = FactoryGirl.create(:event)
+      current_user.events &amp;lt;&amp;lt; event
+      get :index
+      expect(assigns(:events)).to eq [event]
+    end
+
+    it &amp;quot;renders the index page&amp;quot; do
+      login(user)
+      get :index
+      response.should render_template :index
+    end
+
+  end
+
+end
+&lt;/pre&gt;
+&lt;p&gt;Balance such attempts to make the tests DRY with the need to make them readable and understandable. In other words, moving setup blocks too far away from where they&amp;rsquo;re used can lead to confusion when developers are seeing the code for the first time.&lt;/p&gt;
+
+&lt;p&gt;• Inside the spec directory, create a controllers folder where you can place your controller tests and a models folder where you can test your models. A spec directory might look like the following:&lt;/p&gt;
+&lt;pre class="highlight text"&gt;-spec
+  - controllers
+    users_controller_spec.rb
+  - factories
+    user.rb
+  - fixtures
+  - models
+    user_spec.rb
+  - support
+    devise_support.rb
+  spec_helper.rb
+&lt;/pre&gt;
+&lt;h4&gt;Resources:&lt;/h4&gt;
+
+&lt;p&gt;• &lt;a href="https://relishapp.com/rspec"&gt;A great link&lt;/a&gt; for rspec examples. The official spot for RSpec documentation.&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href="http://rspec.info"&gt;A link&lt;/a&gt; with a quick intro to RSpec. Includes info on the RSpec book.&lt;/p&gt;
+
+&lt;p&gt;• Another intro to &lt;a href="http://blog.teamtreehouse.com/an-introduction-to-rspec"&gt;testing with RSpec&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href="http://everydayrails.com/2012/03/12/testing-series-intro.html"&gt;Series on testing Rails&lt;/a&gt; using RSpec. A little outdated (2012), but good stuff. &lt;/p&gt;
+
+&lt;p&gt;• &lt;a href="http://everydayrails.com/2012/04/07/testing-series-rspec-controllers.html"&gt;Testing controllers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;• &lt;a href="http://robots.thoughtbot.com/how-we-test-rails-applications"&gt;How Thoughtbot uses RSpec&lt;/a&gt; to test Rails.&lt;/p&gt;
+
+&lt;h4&gt;Often associated Gems&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Faker&lt;/li&gt;
+&lt;li&gt;factoryGirl&lt;/li&gt;
+&lt;li&gt;Capybara&lt;/li&gt;
+&lt;li&gt;Guard&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>The Ironyard&amp;#58; End Week Five</title>
     <link rel="alternate" href="/blog/2014/05/02/the-ironyard-end-week-five.html"/>
@@ -236,23 +348,6 @@ I&amp;rsquo;m glad to be here, getting ready for another day. It&amp;rsquo;s fun
 &lt;p&gt;
   More later.
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Ironyard&amp;#58; Day One</title>
-    <link rel="alternate" href="/blog/2014/03/31/the-ironyard-day-one.html"/>
-    <id>/blog/2014/03/31/the-ironyard-day-one.html</id>
-    <published>2014-03-31T04:00:00Z</published>
-    <updated>2014-03-31T04:00:00Z</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <summary type="html">&lt;p&gt;Two weeks of crazy gave way to day one at The Iron Yard. Like any first day, it was nerve wracking—new spaces, new people, new rules, new concepts. In our Rails course, we installed everything and built a guessing game. You can see my results &lt;a href="https://gist.github.com/judesamp/9900166"&gt;here&lt;/a&gt;&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Two weeks of crazy gave way to day one at The Iron Yard. Like any first day, it was nerve wracking—new spaces, new people, new rules, new concepts. In our Rails course, we installed everything and built a guessing game. You can see my results &lt;a href="https://gist.github.com/judesamp/9900166"&gt;here&lt;/a&gt;.   &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll admit that I&amp;rsquo;m a little flummoxed about what to say after day one. (That&amp;rsquo;s right, flummoxed!) For the first time in a long time, it&amp;rsquo;s hard to predict the days and weeks ahead. I find myself forced into a state of constant alertness. It&amp;rsquo;s not a natural state for me—and I think that&amp;rsquo;s good.&lt;/p&gt;
-
-&lt;p&gt;More later.&lt;/p&gt;
 </content>
   </entry>
 </feed>

@@ -17,7 +17,7 @@
     <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Jeremy Samples | The Ironyard&#58; End Week Five</title>
+    <title>Jeremy Samples | A Brief Introduction to RSpec</title>
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
@@ -29,7 +29,7 @@
 
     
   </head>
-  <body class="blog blog_2014 blog_2014_05 blog_2014_05_02 blog_2014_05_02_the-ironyard-end-week-five">
+  <body class="blog blog_2014 blog_2014_05 blog_2014_05_26 blog_2014_05_26_rspec-overview">
     
     <div id="root">  
       <!-- Logo & Top Nav -->
@@ -115,28 +115,107 @@
   <article class="small-12 large-9 columns left">
     <h3>
       
-        The Ironyard&#58; End Week Five
+        A Brief Introduction to RSpec
       
     </h3>
 
     
-      <p>First, it&rsquo;s been a while. Feels like I&rsquo;m coming up for air after a long dive. But there&rsquo;s not long to refuel. Tonight is the beginning of <a href="http://atlanta.startupweekend.org/">Startup Weekend</a> in Atlanta, a 54-hour hackathon (my first hackathon of any kind, by the way). So I&rsquo;ll gasp while I can, I guess.</p>
+      <p>I was tasked with putting together an introductory piece on RSpec for The Ironyard&rsquo;s <a href="https://github.com/theironyard/Ruby-Enchiridion">Ruby-Enchiridion</a> this weekend. This is what I came up with. Enjoy!</p>
 
-<p>
-As for The Iron Yard, the last two weeks have been intense. A lot of coding, a lot of Rails, a lot of challenges—in and out of the flow of the course.
-</p>
+<h4>Rspec</h4>
 
-<p>
-But the time and effort is starting to pay off. I can type out a Rails controller off the top of my head—-and that&rsquo;s weird, right? Honestly, I thought we&rsquo;d be scaffolding/generating all the basics, but we&rsquo;ve mostly been typing them out by hand. Our instructor, <a href="shelbyswitzer.com">Shelby Switzer</a>, is really pushing us on the fundamentals, pushing us to know how something really works before we take the shortcuts. And Rails has a lot of shortcuts.
-</p>
+<p>RSpec is a testing tool for the Ruby programming language. RSpec is designed to help programmers do Test-Driven Development (TDD). RSpec is a commonly used testing tool in the Rails community.</p>
 
-<p>
-Yesterday, Shelby guided us through the process of building authentication (login, logout baby!) into a site or application. The process was substantial&hellip;I was thinking that this was going to take a while to get straight. And then at the end, Shelby introduced the Rails &lsquo;has_secure_password&rsquo; method. Suddenly, we were stripping away the methods we&rsquo;d just built to handle authentication. All of these, Shelby, explained, Rails gives you for free.
-</p>
+<h4>Basic RSpec Setup Instructions for Rails</h4>
 
-<p>
-So there&rsquo;s the lesson of the moment: Rails gives you a lot for free, BUT it might be a good idea to make some payments up front anyway.
-</p>
+<ol class="markdown_ordered_list">
+  <li>Add Gem to gemfile (in both developement and test groups)
+    &ldquo;`
+    group :development, :test do
+      gem &lsquo;rspec-rails&rsquo;, &lsquo;~> 3.0.0.beta&rsquo;
+    end
+    &rdquo;`
+  </li>
+  <li>Run &lsquo;bundle install&rsquo;</li>
+  <li>Initialize spec directory by running &lsquo;rails generate rspec:install&rsquo; &mdash; this will create a spec directory and put a spec_helper.rb file inside of it. This spec helper file contains setup and configuration for rspec.</li>
+  <li>In the file where you&rsquo;ll be writing tests (users_controller_spec.rb, for instance), type &ldquo;require &lsquo;spec_helper&rsquo;&rdquo; at the top of the file.</li>
+  <li>Now you&rsquo;re ready to start writing tests. (See tips or resources for more detailed setup info.)</li>
+  <li>Runs the tests with &lsquo;rake spec.&rsquo; This will run all the tests in the spec directory. To run more specific tests, drill down with something like &lsquo;rake spec/controllers/users_controller_spec.rb&rsquo; You can also use &lsquo;rspec&rsquo; in place of the rake command.</li>
+</ol>
+
+<h4>Tips</h4>
+
+<p>• Be sure you close all of your &lsquo;do-end&rsquo; blocks. Their lack can cause all sorts of fun confusion.</p>
+
+<p>• When testing Rails controllers, the :assigns in </p>
+<pre class="highlight text">expect(:assigns).to eq &lt;value&gt;
+</pre>
+<p>is basically equivalent to the variable @assigns in whatever action you&rsquo;re testing</p>
+
+<p>• Test one thing at a time! Each test should have only one expect or should statement.</p>
+
+<p>• Move repeated setup statements to the top of a block and make them generally available. Here is an example (notice the let statement at the top, making a user available during each of the tests nested within this block): </p>
+<pre class="highlight text">describe EventsController do
+
+  let(:user) { FactoryGirl.create(:user) }
+
+  describe &quot;GET #index&quot; do
+
+    it &quot;assigns collection of events&quot; do
+      login(user)
+      event = FactoryGirl.create(:event)
+      current_user.events &lt;&lt; event
+      get :index
+      expect(assigns(:events)).to eq [event]
+    end
+
+    it &quot;renders the index page&quot; do
+      login(user)
+      get :index
+      response.should render_template :index
+    end
+
+  end
+
+end
+</pre>
+<p>Balance such attempts to make the tests DRY with the need to make them readable and understandable. In other words, moving setup blocks too far away from where they&rsquo;re used can lead to confusion when developers are seeing the code for the first time.</p>
+
+<p>• Inside the spec directory, create a controllers folder where you can place your controller tests and a models folder where you can test your models. A spec directory might look like the following:</p>
+<pre class="highlight text">-spec
+  - controllers
+    users_controller_spec.rb
+  - factories
+    user.rb
+  - fixtures
+  - models
+    user_spec.rb
+  - support
+    devise_support.rb
+  spec_helper.rb
+</pre>
+<h4>Resources:</h4>
+
+<p>• <a href="https://relishapp.com/rspec">A great link</a> for rspec examples. The official spot for RSpec documentation.</p>
+
+<p>• <a href="http://rspec.info">A link</a> with a quick intro to RSpec. Includes info on the RSpec book.</p>
+
+<p>• Another intro to <a href="http://blog.teamtreehouse.com/an-introduction-to-rspec">testing with RSpec</a>.</p>
+
+<p>• <a href="http://everydayrails.com/2012/03/12/testing-series-intro.html">Series on testing Rails</a> using RSpec. A little outdated (2012), but good stuff. </p>
+
+<p>• <a href="http://everydayrails.com/2012/04/07/testing-series-rspec-controllers.html">Testing controllers</a>.</p>
+
+<p>• <a href="http://robots.thoughtbot.com/how-we-test-rails-applications">How Thoughtbot uses RSpec</a> to test Rails.</p>
+
+<h4>Often associated Gems</h4>
+
+<ul>
+<li>Faker</li>
+<li>factoryGirl</li>
+<li>Capybara</li>
+<li>Guard</li>
+</ul>
 
     
 
@@ -144,8 +223,8 @@ So there&rsquo;s the lesson of the moment: Rails gives you a lot for free, BUT i
 
     
       <ul class="read_next">
-        <li><a href="/blog/2014/04/14/the-ironyard-beginning-week-three.html"><i class='icon-caret-left'></i> The Ironyard&#58; Beginning Week Three</a></li>
-        <li><a href="/blog/2014/05/26/rspec-overview.html">A Brief Introduction to RSpec <i class='icon-caret-right'></i></a></li>
+        <li><a href="/blog/2014/05/02/the-ironyard-end-week-five.html"><i class='icon-caret-left'></i> The Ironyard&#58; End Week Five</a></li>
+        <li>&nbsp;</li>
       </ul>
 
       <div id="disqus_thread"></div>
@@ -163,13 +242,13 @@ So there&rsquo;s the lesson of the moment: Rails gives you a lot for free, BUT i
   </article>
   <aside class="small-12 large-3 columns right">
     <ul class="credit">
-      <li class="time">Posted on <time datetime="2014-05-02">Friday May  2, 2014</time></li>
+      <li class="time">Posted on <time datetime="2014-05-26">Monday May 26, 2014</time></li>
     </ul>
     <ul class="tags">
       
-        <li><a class="tiny button secondary round" href="/blog/tags/the-ironyard.html">The Ironyard</a></li>
+        <li><a class="tiny button secondary round" href="/blog/tags/rspec.html">rspec</a></li>
       
-        <li><a class="tiny button secondary round" href="/blog/tags/days.html">days</a></li>
+        <li><a class="tiny button secondary round" href="/blog/tags/ruby-enchiridion.html">Ruby-Enchiridion</a></li>
       
     </ul>
   </aside>
