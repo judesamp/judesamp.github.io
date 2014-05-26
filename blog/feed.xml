@@ -5,10 +5,239 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2014-03-31T04:00:00Z</updated>
+  <updated>2014-05-02T04:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The Ironyard&amp;#58; End Week Five</title>
+    <link rel="alternate" href="/blog/2014/05/02/the-ironyard-end-week-five.html"/>
+    <id>/blog/2014/05/02/the-ironyard-end-week-five.html</id>
+    <published>2014-05-02T04:00:00Z</published>
+    <updated>2014-05-02T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;First, it’s been a while. Feels like I’m coming up for air after a long dive. But there’s not long to refuel. Tonight is the beginning of &lt;a href="http://atlanta.startupweekend.org/"&gt;Startup Weekend&lt;/a&gt; in Atlanta, a 54-hour hackathon (my first hackathon of any kind, by the way). So I’ll gasp while...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;First, it&amp;rsquo;s been a while. Feels like I&amp;rsquo;m coming up for air after a long dive. But there&amp;rsquo;s not long to refuel. Tonight is the beginning of &lt;a href="http://atlanta.startupweekend.org/"&gt;Startup Weekend&lt;/a&gt; in Atlanta, a 54-hour hackathon (my first hackathon of any kind, by the way). So I&amp;rsquo;ll gasp while I can, I guess.&lt;/p&gt;
+
+&lt;p&gt;
+As for The Iron Yard, the last two weeks have been intense. A lot of coding, a lot of Rails, a lot of challenges—in and out of the flow of the course.
+&lt;/p&gt;
+
+&lt;p&gt;
+But the time and effort is starting to pay off. I can type out a Rails controller off the top of my head—-and that&amp;rsquo;s weird, right? Honestly, I thought we&amp;rsquo;d be scaffolding/generating all the basics, but we&amp;rsquo;ve mostly been typing them out by hand. Our instructor, &lt;a href="shelbyswitzer.com"&gt;Shelby Switzer&lt;/a&gt;, is really pushing us on the fundamentals, pushing us to know how something really works before we take the shortcuts. And Rails has a lot of shortcuts.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday, Shelby guided us through the process of building authentication (login, logout baby!) into a site or application. The process was substantial&amp;hellip;I was thinking that this was going to take a while to get straight. And then at the end, Shelby introduced the Rails &amp;lsquo;has_secure_password&amp;rsquo; method. Suddenly, we were stripping away the methods we&amp;rsquo;d just built to handle authentication. All of these, Shelby, explained, Rails gives you for free.
+&lt;/p&gt;
+
+&lt;p&gt;
+So there&amp;rsquo;s the lesson of the moment: Rails gives you a lot for free, BUT it might be a good idea to make some payments up front anyway.
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Ironyard&amp;#58; Beginning Week Three</title>
+    <link rel="alternate" href="/blog/2014/04/14/the-ironyard-beginning-week-three.html"/>
+    <id>/blog/2014/04/14/the-ironyard-beginning-week-three.html</id>
+    <published>2014-04-14T04:00:00Z</published>
+    <updated>2014-04-14T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;We’re at the beginning of week 3 here at the Iron Yard Academy in Atlanta. This week, we’re going to be building sites with Sinatra, talking about REST, gems, bundler, and dipping our toes into the world of databases. The preliminaries appear to be...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;We&amp;rsquo;re at the beginning of week 3 here at the Iron Yard Academy in Atlanta. This week, we&amp;rsquo;re going to be building sites with Sinatra, talking about REST, gems, bundler, and dipping our toes into the world of databases. The preliminaries appear to be near their end; now we&amp;rsquo;re building web apps. &lt;/p&gt;
+
+&lt;p&gt;
+  But before diving headlong into this week, I wanted to linger a bit on the end of last week. The last three days and weekend were all about HTML and CSS. We basically got a pdf of a site—and had to mimic it as closely as possible. For me, it was a labor intensive assignment. Apparently, there are a lot of details of web design I don&amp;rsquo;t even notice. (Hello, shadows!) I&amp;rsquo;ve been dabbling in HTML and CSS for a while, but a little piece of positioning finally clicked into place over the weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Basically, I discovered how to create rows of content using nested &lt;a href="http://en.wikipedia.org/wiki/Span_and_div"&gt;divs&lt;/a&gt;. Yeah, it ain&amp;rsquo;t rocket science, but I was happy to understand it—even if all of the frameworks out there basically make this epiphany a little redundant. 
+&lt;/p&gt;
+
+&lt;p&gt;
+  So here&amp;rsquo;s how I understand it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      Create a parent div pair. We&amp;rsquo;ll give them a class of grandparent. 
+      &lt;p&gt;
+      &lt;code&gt;
+        &lt;div class="grandparent"&gt;
+          
+        &lt;/div&gt;
+      &lt;/code&gt;
+      &lt;/p&gt;
+
+      In the css, we&amp;rsquo;ll give grandparent a width of 100%.
+      &lt;p&gt;
+        &lt;code&gt;
+          .grandparent {
+            width: 100%;
+          }
+        &lt;/code&gt;
+      &lt;/p&gt;
+    &lt;/li&gt;
+      Nested inside of grandparent, we&amp;rsquo;ll put another div pair. This one, we&amp;rsquo;ll give a class of parent.
+      &lt;p&gt;
+        &lt;code&gt;
+          &lt;div class="grandparent"&gt;
+            &lt;div class="parent"&gt;
+              
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/code&gt;
+      &lt;/P&gt;
+
+      In the css, we&amp;rsquo;ll give parent the width we have in mind for our layout, whether that&amp;rsquo;s 768, 940, or whatever. You&amp;rsquo;ll also need to set margin to auto if you want your eventual content to be centered on the page. I suspect that it might be a good idea to set height here too. This chould help short circuit positioning confusion later, as you add more and more to your design.
+      
+      &lt;P&gt;
+        &lt;code&gt;
+          .parent {
+            width: 940px;
+            margin: auto
+          }
+        &lt;/code&gt;
+      &lt;/P&gt;
+
+    &lt;li&gt;
+      Finally, we can nest our content inside of our two existing divs.
+      &lt;P&gt;
+        &lt;pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"&gt;&lt;code style="color:#000000;word-wrap:normal;"&gt; &amp;lt;div class="grandparent"&amp;gt;  
+       &amp;lt;div class="parent"&amp;gt;  
+        &amp;lt;div class="child1"&amp;gt;  
+         content  
+        &amp;lt;/div&amp;gt;  
+         &amp;lt;div class="child2"&amp;gt;  
+         content  
+        &amp;lt;/div&amp;gt;  
+        &amp;lt;div class="child3"&amp;gt;  
+         content  
+        &amp;lt;/div&amp;gt;  
+       &amp;lt;/div&amp;gt;  
+      &amp;lt;/div&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/P&gt;
+
+      In the css, we can give these children divs widths that add up to our parent width (while taking margin, border, etc. into account). You&amp;rsquo;ll also need to float the divs left or right to get them into the row formation. So, something like:
+      
+      &lt;P&gt;
+       &lt;pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"&gt;&lt;code style="color:#000000;word-wrap:normal;"&gt; .child1 {  
+       width: 300px;  
+       margin-right: 10px;  
+       float:left;  
+      }  
+      .child2 {  
+       width: 300px;  
+       margin-left: 10px;  
+       margin-right: 10px;  
+       float:left;  
+      }  
+      .child3 {  
+       width: 300px;  
+       margin-left: 10px;  
+       float:left;  
+      }  
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/P&gt;
+      
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Of course, getting this to work responsively is a lot more complex. And there are probably some nuances of how all of this works together that I&amp;rsquo;m missing. But it&amp;rsquo;s a start. 
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Ironyard&amp;#58; Day Six</title>
+    <link rel="alternate" href="/blog/2014/04/08/the-ironyard-day-six.html"/>
+    <id>/blog/2014/04/08/the-ironyard-day-six.html</id>
+    <published>2014-04-08T04:00:00Z</published>
+    <updated>2014-04-08T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;It’s the morning of day 7 here at the &lt;a href="http://theironyard.com/"&gt;Iron Yard Academy&lt;/a&gt; in Atlanta. The sun is coming up. There’s a chill in the air. I’m listening to &lt;a href="http://www.npr.org/2014/03/23/291167043/first-listen-mac-demarco-salad-days"&gt;Mac Demarco’s album ‘Salad Days"&lt;/a&gt; on my headphones.&lt;/p&gt;
+
+&lt;p&gt;
+I’m glad to be here, getting ready for another day. It’s funny...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s the morning of day 7 here at the &lt;a href="http://theironyard.com/"&gt;Iron Yard Academy&lt;/a&gt; in Atlanta. The sun is coming up. There&amp;rsquo;s a chill in the air. I&amp;rsquo;m listening to &lt;a href="http://www.npr.org/2014/03/23/291167043/first-listen-mac-demarco-salad-days"&gt;Mac Demarco&amp;rsquo;s album &amp;lsquo;Salad Days&amp;quot;&lt;/a&gt; on my headphones.&lt;/p&gt;
+
+&lt;p&gt;
+I&amp;rsquo;m glad to be here, getting ready for another day. It&amp;rsquo;s funny, for the last few years, I got in the habit of staying up late and getting up late. I&amp;rsquo;d drag myself out of bed and into work. When I think about those years now, I realize how little excitement I felt about my work. It&amp;rsquo;s probably no accident that I chose the word &amp;ldquo;drag&amp;rdquo; to describe what I did on those mornings.
+&lt;/p&gt;
+
+&lt;p&gt;
+  So yeah, The Iron Yard isn&amp;rsquo;t easy. The days are long and sometimes overwhelming. But they&amp;rsquo;re full. They&amp;rsquo;re challenging. And for me, that old familiar &amp;ldquo;drag&amp;rdquo; is absent. Of course, maybe there&amp;rsquo;s a little Don Draper to the situation—you know, loving the beginning of things. And I can&amp;rsquo;t deny that I do love the beginning of things. But I&amp;rsquo;ve been building from the ground up with coding for almost two years—and I&amp;rsquo;m still fired up about it. At this point, I suspect it&amp;rsquo;s not the romance that&amp;rsquo;s fueling the fire (though that might be part of it too); I think it&amp;rsquo;s the solving of problems. I just flat like to make things work.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Anyway, enough of my—what do you even call this—Philosophizing? Navel-gazing? Yeah, probably the latter. But let&amp;rsquo;s get to specifics. Over the last three or four days at The Iron Yard Academy, we&amp;rsquo;ve continued our whirlwind tour of Ruby. We&amp;rsquo;ve looked at methods, classes, class methods, and inheritance. Today, we start looking at &lt;a href="http://rspec.info/"&gt;RSpec&lt;/a&gt;, a testing tool for Ruby code. So I might feel different about the &amp;ldquo;drag&amp;rdquo; thing by the end of the day:)
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Ironyard&amp;#58; Day Three</title>
+    <link rel="alternate" href="/blog/2014/04/03/the-ironyard-day-three.html"/>
+    <id>/blog/2014/04/03/the-ironyard-day-three.html</id>
+    <published>2014-04-03T04:00:00Z</published>
+    <updated>2014-04-03T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;Okay, this might shortchange the day a little, but…Ruby methods and refactoring. That was day three. There was a lot of programming head.&lt;/p&gt;
+
+&lt;p&gt;One thing I relearned: It’s good to know what kind of object you’re dealing with. Is it a string, a symbol, an...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Okay, this might shortchange the day a little, but&amp;hellip;Ruby methods and refactoring. That was day three. There was a lot of programming head.&lt;/p&gt;
+
+&lt;p&gt;One thing I relearned: It&amp;rsquo;s good to know what kind of object you&amp;rsquo;re dealing with. Is it a string, a symbol, an integer, an array, a hash? It matters. Really matters.&lt;/p&gt;
+
+&lt;p&gt;More later.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Ironyard&amp;#58; Day Two</title>
+    <link rel="alternate" href="/blog/2014/04/01/the-ironyard-day-two.html"/>
+    <id>/blog/2014/04/01/the-ironyard-day-two.html</id>
+    <published>2014-04-01T04:00:00Z</published>
+    <updated>2014-04-01T04:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I’m starting to figure out that I’m not going to have a lot of time to write during my twelve weeks at The Iron Yard, but I’m going to try and write at least a few times a week. Day two looked like this: &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;We started the morning going over the previous...&lt;/li&gt;&lt;/ul&gt;</summary>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m starting to figure out that I&amp;rsquo;m not going to have a lot of time to write during my twelve weeks at The Iron Yard, but I&amp;rsquo;m going to try and write at least a few times a week. Day two looked like this: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We started the morning going over the previous day&amp;rsquo;s homework. Someone would bring their computer to the front and our instructor would hook it up to the huge TV monitor. Another student would then talk through the code, explaining what they thought was going on. We went through three or four programs in an hour and a half. The lesson: Not only do we need to know how to code; we need to understand how to talk about it.&lt;/li&gt;
+  &lt;li&gt;After the early morning session, we spent some time going over hashes in Ruby. Things got nested quickly:)&lt;/li&gt;
+  &lt;li&gt;In the afternoon lab, we started working on our next assignment: a personality quiz. The guidelines looked like this:&lt;/li&gt;
+  &lt;br /&gt;
+      &lt;ul&gt;
+        &lt;li&gt;at lease 10 questions&lt;/li&gt;
+        &lt;li&gt;use hashes to store data&lt;/li&gt;
+        &lt;li&gt;scoring must involve at least one ternary operator&lt;/li&gt;
+        &lt;li&gt;report results of personality quiz to user&lt;/li&gt;
+        &lt;li&gt;Bonus: multiple users complete and store data (within life of program)&lt;/li&gt;
+        &lt;li&gt;show user results (paragraph, table, percentages)&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;p&gt;If you&amp;rsquo;re interested, you can see my personality quiz &lt;a href="https://gist.github.com/judesamp/9917942"&gt;here&lt;/a&gt;.&lt;/p&gt;
+  
+&lt;/ul&gt;
+
+&lt;p&gt;
+  More later.
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The Ironyard&amp;#58; Day One</title>
     <link rel="alternate" href="/blog/2014/03/31/the-ironyard-day-one.html"/>
@@ -24,59 +253,6 @@
 &lt;p&gt;I&amp;rsquo;ll admit that I&amp;rsquo;m a little flummoxed about what to say after day one. (That&amp;rsquo;s right, flummoxed!) For the first time in a long time, it&amp;rsquo;s hard to predict the days and weeks ahead. I find myself forced into a state of constant alertness. It&amp;rsquo;s not a natural state for me—and I think that&amp;rsquo;s good.&lt;/p&gt;
 
 &lt;p&gt;More later.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Fear&amp;#58; Changing Careers</title>
-    <link rel="alternate" href="/blog/2014/03/20/the-fear-changing-careers.html"/>
-    <id>/blog/2014/03/20/the-fear-changing-careers.html</id>
-    <published>2014-03-20T04:00:00Z</published>
-    <updated>2014-03-20T04:00:00Z</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <summary type="html">&lt;p class="first"&gt;
-So, I’m afraid. I wish I wasn’t, but there it is. I’m at the precipice now, the jumping off point. &lt;a href="http://theironyard.com/academy/rails-engineering/"&gt;Rails bootcamp&lt;/a&gt; starts in under two weeks. Several times lately, I’ve been reminded: the mind can be a trap. I keep thinking about all of the decisions...&lt;/p&gt;</summary>
-    <content type="html">&lt;p class='first'&gt;
-So, I&amp;rsquo;m afraid. I wish I wasn&amp;rsquo;t, but there it is. I&amp;rsquo;m at the precipice now, the jumping off point. &lt;a href="http://theironyard.com/academy/rails-engineering/"&gt;Rails bootcamp&lt;/a&gt; starts in under two weeks. Several times lately, I&amp;rsquo;ve been reminded: the mind can be a trap. I keep thinking about all of the decisions that led me here; I can&amp;rsquo;t change them, but part of me desperately wishes I could—just a few of them, really. What if I&amp;rsquo;d made this decision five years ago, ten years ago? My life would be set, right? What if I&amp;rsquo;d been smarter, stronger, and better all along? And yeah, that&amp;rsquo;s the fear (and doubt) talking. Because I&amp;rsquo;m actually pumped about the road ahead. I want to go to dev bootcamp. I want to learn Rails (and more!). I want to spend more time coding.
-&lt;/p&gt;
-
-&lt;p&gt;So what&amp;rsquo;s going on here? What am I afraid of? And yes, I&amp;rsquo;m going to do my best to be &lt;a href="/choosing-the-iron-yard"&gt;very specific&lt;/a&gt;.
-&lt;ul&gt;
-&lt;li&gt;For the first time in a long time, I&amp;rsquo;m afraid of tomorrow. It&amp;rsquo;s uncertain. It&amp;rsquo;s unmapped. I&amp;rsquo;ve been doing the same thing for more than ten years. I&amp;rsquo;m a creature of habits. Change is scary.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m afraid of the upset this could cause my family. I&amp;rsquo;m a new dad. My amazing daughter is eight months old. My wife is awesome—and so supportive. And I know the road I&amp;rsquo;ve chosen is going to mean new difficulties for them. Yes, I hope to build a better future for all of us, but I worry about the challenges my family will face in the present.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m afraid of the test. Am I good enough? Smart enough? Can I face the things I&amp;rsquo;m not good at—public speaking, taking criticism, whatever parts of coding I happen to be particularly horrible at, etcetera? There are moments when I know that &amp;ldquo;yes&amp;rdquo; is the answer to all of these questions, when I know I can face the test ahead, but the self-doubt is never far away.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m afraid of being broke. That&amp;rsquo;s all I&amp;rsquo;ll say about that:)&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;Obviously, this is an incomplete list, but I think I&amp;rsquo;ve hit the highlights of my own personal mind trap. The key, I guess, is not getting stuck in that trap—and getting out when you are stuck. Because I suspect that the fears themselves aren&amp;rsquo;t the problem; the problem is going round and round in the accompanying anxiety. &lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s where I&amp;rsquo;m at. Trying not to get stuck. Trying not to fixate. And though I don&amp;rsquo;t have any miracle fixes figured out, I&amp;rsquo;ve been running across a nice formulation on twitter:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;fun == hard returns true&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;More and more, I think this is one of the secrets of life that I&amp;rsquo;ve yet to learn. Hard (and scary) ain&amp;rsquo;t the end of the world.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Choosing the Ironyard</title>
-    <link rel="alternate" href="/blog/2014/03/14/choosing-the-ironyard.html"/>
-    <id>/blog/2014/03/14/choosing-the-ironyard.html</id>
-    <published>2014-03-14T04:00:00Z</published>
-    <updated>2014-03-14T04:00:00Z</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <summary type="html">&lt;p&gt;So. About my first post. After a reread, I realized I’d fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;So. About my first post. After a reread, I realized I&amp;rsquo;d fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing for me. I want to be known; it&amp;rsquo;s why I write. There&amp;rsquo;s part of me that wants to connect. But another part of me is terrified of being exposed in this way—even if I&amp;rsquo;m the one initiating the exposure. But these days, I&amp;rsquo;m all about doing things differently. That means that it&amp;rsquo;s time for specifics.&lt;/p&gt;
-
-&lt;h3&gt;Why the Iron Yard?&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;d like to say I chose The Iron Yard after extensive research and forethought. And I suppose that, in one sense, I did. I&amp;rsquo;ve made a hobby of reading about dev bootcamps—from Dev BootCamp in San Francisco to Bitmaker Labs in Toronto to CodeFellows in Seattle to the Nashville Software School. I mean, I was a licensed lurker. So I guess you could say I knew the lay of the land. But when it came to actually choosing The Iron Yard, I made the decision to apply about two minutes after I found The Iron Yard&amp;rsquo;s website. There were basically two crucial factors in making that choice. First, The Iron Yard was opening a coding academy in Atlanta. I could attend without having to pay for a place to stay. That meant I could almost afford to do it:) Second, The Iron Yard offers a guarantee: a job within six months or your money back. It&amp;rsquo;s nice to have a partner in the boat with you, partcularly if you&amp;rsquo;re setting out for parts unknown.&lt;/p&gt;
-
-&lt;p&gt;And yeah, I read more about The Iron Yard before actually applying, enough to put myself at ease with the idea of taking this leap. But the truth is that I was ready to jump—and the Iron Yard seemed like a soft landing spot:) &lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to delve deeper in my next post, including taking a look at what scares me about the road ahead. So, more specifics.&lt;/p&gt;
 </content>
   </entry>
 </feed>

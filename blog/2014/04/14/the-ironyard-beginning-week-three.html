@@ -17,7 +17,7 @@
     <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Jeremy Samples | Choosing the Ironyard</title>
+    <title>Jeremy Samples | The Ironyard&#58; Beginning Week Three</title>
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
@@ -29,7 +29,7 @@
 
     
   </head>
-  <body class="blog blog_2014 blog_2014_03 blog_2014_03_14 blog_2014_03_14_choosing-the-ironyard">
+  <body class="blog blog_2014 blog_2014_04 blog_2014_04_14 blog_2014_04_14_the-ironyard-beginning-week-three">
     
     <div id="root">  
       <!-- Logo & Top Nav -->
@@ -115,20 +115,115 @@
   <article class="small-12 large-9 columns left">
     <h3>
       
-        Choosing the Ironyard
+        The Ironyard&#58; Beginning Week Three
       
     </h3>
 
     
-      <p>So. About my first post. After a reread, I realized I&rsquo;d fallen into some old habits. As a writer, I distance myself. I get vague. I avoid specifics and details. I guess at its core, this is a form of hiding. And it reveals the great paradox of writing for me. I want to be known; it&rsquo;s why I write. There&rsquo;s part of me that wants to connect. But another part of me is terrified of being exposed in this way—even if I&rsquo;m the one initiating the exposure. But these days, I&rsquo;m all about doing things differently. That means that it&rsquo;s time for specifics.</p>
+      <p>We&rsquo;re at the beginning of week 3 here at the Iron Yard Academy in Atlanta. This week, we&rsquo;re going to be building sites with Sinatra, talking about REST, gems, bundler, and dipping our toes into the world of databases. The preliminaries appear to be near their end; now we&rsquo;re building web apps. </p>
 
-<h3>Why the Iron Yard?</h3>
+<p>
+  But before diving headlong into this week, I wanted to linger a bit on the end of last week. The last three days and weekend were all about HTML and CSS. We basically got a pdf of a site—and had to mimic it as closely as possible. For me, it was a labor intensive assignment. Apparently, there are a lot of details of web design I don&rsquo;t even notice. (Hello, shadows!) I&rsquo;ve been dabbling in HTML and CSS for a while, but a little piece of positioning finally clicked into place over the weekend.
+</p>
 
-<p>I&rsquo;d like to say I chose The Iron Yard after extensive research and forethought. And I suppose that, in one sense, I did. I&rsquo;ve made a hobby of reading about dev bootcamps—from Dev BootCamp in San Francisco to Bitmaker Labs in Toronto to CodeFellows in Seattle to the Nashville Software School. I mean, I was a licensed lurker. So I guess you could say I knew the lay of the land. But when it came to actually choosing The Iron Yard, I made the decision to apply about two minutes after I found The Iron Yard&rsquo;s website. There were basically two crucial factors in making that choice. First, The Iron Yard was opening a coding academy in Atlanta. I could attend without having to pay for a place to stay. That meant I could almost afford to do it:) Second, The Iron Yard offers a guarantee: a job within six months or your money back. It&rsquo;s nice to have a partner in the boat with you, partcularly if you&rsquo;re setting out for parts unknown.</p>
+<p>
+  Basically, I discovered how to create rows of content using nested <a href="http://en.wikipedia.org/wiki/Span_and_div">divs</a>. Yeah, it ain&rsquo;t rocket science, but I was happy to understand it—even if all of the frameworks out there basically make this epiphany a little redundant. 
+</p>
 
-<p>And yeah, I read more about The Iron Yard before actually applying, enough to put myself at ease with the idea of taking this leap. But the truth is that I was ready to jump—and the Iron Yard seemed like a soft landing spot:) </p>
+<p>
+  So here&rsquo;s how I understand it. 
+</p>
 
-<p>I&rsquo;m going to delve deeper in my next post, including taking a look at what scares me about the road ahead. So, more specifics.</p>
+<p>
+  <ol>
+    <li>
+      Create a parent div pair. We&rsquo;ll give them a class of grandparent. 
+      <p>
+      <code>
+        <div class="grandparent">
+          
+        </div>
+      </code>
+      </p>
+
+      In the css, we&rsquo;ll give grandparent a width of 100%.
+      <p>
+        <code>
+          .grandparent {
+            width: 100%;
+          }
+        </code>
+      </p>
+    </li>
+      Nested inside of grandparent, we&rsquo;ll put another div pair. This one, we&rsquo;ll give a class of parent.
+      <p>
+        <code>
+          <div class="grandparent">
+            <div class="parent">
+              
+            </div>
+          </div>
+        </code>
+      </P>
+
+      In the css, we&rsquo;ll give parent the width we have in mind for our layout, whether that&rsquo;s 768, 940, or whatever. You&rsquo;ll also need to set margin to auto if you want your eventual content to be centered on the page. I suspect that it might be a good idea to set height here too. This chould help short circuit positioning confusion later, as you add more and more to your design.
+      
+      <P>
+        <code>
+          .parent {
+            width: 940px;
+            margin: auto
+          }
+        </code>
+      </P>
+
+    <li>
+      Finally, we can nest our content inside of our two existing divs.
+      <P>
+        <pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> &lt;div class="grandparent"&gt;  
+       &lt;div class="parent"&gt;  
+        &lt;div class="child1"&gt;  
+         content  
+        &lt;/div&gt;  
+         &lt;div class="child2"&gt;  
+         content  
+        &lt;/div&gt;  
+        &lt;div class="child3"&gt;  
+         content  
+        &lt;/div&gt;  
+       &lt;/div&gt;  
+      &lt;/div&gt;  
+</code></pre>
+      </P>
+
+      In the css, we can give these children divs widths that add up to our parent width (while taking margin, border, etc. into account). You&rsquo;ll also need to float the divs left or right to get them into the row formation. So, something like:
+      
+      <P>
+       <pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;"> .child1 {  
+       width: 300px;  
+       margin-right: 10px;  
+       float:left;  
+      }  
+      .child2 {  
+       width: 300px;  
+       margin-left: 10px;  
+       margin-right: 10px;  
+       float:left;  
+      }  
+      .child3 {  
+       width: 300px;  
+       margin-left: 10px;  
+       float:left;  
+      }  
+</code></pre>
+      </P>
+      
+    </li>
+  </ol>
+</p>
+
+<p>Of course, getting this to work responsively is a lot more complex. And there are probably some nuances of how all of this works together that I&rsquo;m missing. But it&rsquo;s a start. 
+</p>
 
     
 
@@ -136,8 +231,8 @@
 
     
       <ul class="read_next">
-        <li><a href="/blog/2014/03/12/the-ironyard.html"><i class='icon-caret-left'></i> The Ironyard</a></li>
-        <li><a href="/blog/2014/03/20/the-fear-changing-careers.html">The Fear&#58; Changing Careers <i class='icon-caret-right'></i></a></li>
+        <li><a href="/blog/2014/04/08/the-ironyard-day-six.html"><i class='icon-caret-left'></i> The Ironyard&#58; Day Six</a></li>
+        <li><a href="/blog/2014/05/02/the-ironyard-end-week-five.html">The Ironyard&#58; End Week Five <i class='icon-caret-right'></i></a></li>
       </ul>
 
       <div id="disqus_thread"></div>
@@ -155,17 +250,13 @@
   </article>
   <aside class="small-12 large-3 columns right">
     <ul class="credit">
-      <li class="time">Posted on <time datetime="2014-03-14">Friday Mar 14, 2014</time></li>
+      <li class="time">Posted on <time datetime="2014-04-14">Monday Apr 14, 2014</time></li>
     </ul>
     <ul class="tags">
       
         <li><a class="tiny button secondary round" href="/blog/tags/the-ironyard.html">The Ironyard</a></li>
       
-        <li><a class="tiny button secondary round" href="/blog/tags/developer.html">developer</a></li>
-      
-        <li><a class="tiny button secondary round" href="/blog/tags/bootcamp.html">bootcamp</a></li>
-      
-        <li><a class="tiny button secondary round" href="/blog/tags/coding.html">coding</a></li>
+        <li><a class="tiny button secondary round" href="/blog/tags/days.html">days</a></li>
       
     </ul>
   </aside>
