@@ -48,7 +48,7 @@ Time.zone = "America/New_York"
 ## Blog settings
 ###
 
-set :disqus_shortname, "adas-blog"
+set :disqus_shortname, "jeremysamplescomblog"
 
 activate :blog do |blog|
   blog.prefix = "/blog"
