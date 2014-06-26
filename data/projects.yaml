@@ -1,21 +1,43 @@
-- 
-  name: The Ironyard Academy
-  url: http://ironyard.com
-  screenshot: iron_yard.png
+-
+  name: LoveLetterMashup
+  url: http://lovelettermashup.com
+  github: https://github.com/judesamp/love_letter_mashup
+  screenshot: love_letter_mashup.png
   featured: true
   description: |
-                 The Ironyard Academy is a full-time, twelve week program that turns you into a web developer.
+                 An app for viewing famous love letters, mashing them up, and sending them out into the world. This was my final project at the Iron Yard, and I built it during the last two weeks of the program. This app includes the ability to sign up using the Omniauth strategies for both Twitter and Facebook. It hooks into the Lob API to facilitate the sending of love letters via snail mail and uses the Prawn gem to create a pdf for printing purposes. Also employs Stripe to process payments. 
+
+-
+  name: IronBaseOne
+  url: http://ironbase.herokuapp.com
+  github: https://github.com/judesamp/ironbase
+  screenshot: ironbase.png
+  featured: true
+  description: |
+                 An assignment/homework management app designed with The Iron Yard's process in mind. Includes the following features: admin and student workflows, the ability to make and turn in assignments, a comment and email system that makes room for general discussion of assignments as well as private discussions between teacher and student regarding specific homework. Makes use of Devise, CanCanCan, and Workflow gems to make all of this go.
 - 
   name: Running Log
-  url: http://mighty-wildwood-9113.herokuapp.com
+  url: http://simplerunninglog.herokuapp.com
+  github: https://github.com/judesamp/running_log
   screenshot: running_log.png
   featured: true
   description: |
-                 A running log I built for my own use. It helps runners track their runs and progress over time. I'm hoping to include more features soon, including adding goals and multiple ways to chart statistics.
+                 A running log I built for my own use. It helps runners track their runs and progress over time. I'm hoping to include more features soon, including adding goals and multiple ways to chart statistics. This app makes use of several javascript workflows (for practice purposes), including both unobtrusive javascript and more API-like JSON responses filtered through the RABL gem.
+
+- 
+  name: The Iron Yard Academy
+  site_url: http://ironyard.com
+  github:
+  screenshot: iron_yard.png
+  featured: false
+  description: |
+                 The Iron Yard Academy is a full-time, twelve week program that turns you into a web developer.
+
 -
   name: Family Faith Steps
-  url: https://itunes.apple.com/us/app/family-faith-steps-1/id824498570?mt=8
+  site_url: https://itunes.apple.com/us/app/family-faith-steps-1/id824498570?mt=8
+  github: 
   screenshot: family_fs.png
-  featured: true
+  featured: false
   description: |
                  A mobile app I built for a former employer using Sencha Touch 2 and Phonegap. It's designed to help families spend quality time together—studying the Bible, doing ministry, and just having fun!

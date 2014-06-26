@@ -25,7 +25,20 @@ title: Portfolio
           <% if project.source_link %>
             <div class='source-link'><a href='<%= project.source_link %>'><i class='icon-github'></i><%= project.source_link.gsub(/http(s?):\/\/github.com\//, '') %></a></div>
           <% end %>
-          <%= simple_format project.description %>
+          <% if project.url.present? %>
+            <%= simple_format project.description %>
+            <a href="<%= project.url %>">View App</a>
+            <br />
+            <br />
+          <% else %>
+            <%= simple_format project.description %>
+            <a href="<%= project.site_url %>">View Site</a>
+            <br />
+            <br />
+          <% end %>
+          <% if project.github.present? %>
+            <a href="<%= project.github %>">View on GitHub</a>
+          <% end %>
         </div>
       </div>
     <% end %>
