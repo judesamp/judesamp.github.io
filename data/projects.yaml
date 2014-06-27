@@ -5,7 +5,7 @@
   screenshot: love_letter_mashup.png
   featured: true
   description: |
-                 An app for viewing famous love letters, mashing them up, and sending them out into the world. This was my final project at the Iron Yard, and I built it during the last two weeks of the program. This app includes the ability to sign up using the Omniauth strategies for both Twitter and Facebook. It hooks into the Lob API to facilitate the sending of love letters via snail mail and uses the Prawn gem to create a pdf for printing purposes. Also employs Stripe to process payments. 
+                 An app for viewing famous love letters, mashing them up, and sending them out into the world. This was my final project at The Iron Yard, and I built it during the last two weeks of the program. This app includes the ability to sign up using the Omniauth strategies for both Twitter and Facebook. It hooks into the Lob API to facilitate the sending of love letters via snail mail and uses the Prawn gem to create a pdf for printing purposes. Also employs Stripe to process payments. 
 
 -
   name: IronBaseOne
