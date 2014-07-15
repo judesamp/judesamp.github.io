@@ -5,7 +5,7 @@ title: Portfolio
 <div class="portfolio_image">
   <div class="portfolio_image_row">
     <div class="text_holder">
-      <h1 class="portfolio_title">My Portfolio</h1>
+      <h1 class="portfolio_title">Portfolio</h1>
     </div>
   </div>
 </div>
@@ -27,17 +27,17 @@ title: Portfolio
           <% end %>
           <% if project.url.present? %>
             <%= simple_format project.description %>
-            <a href="<%= project.url %>">View App</a>
+            <a href="<%= project.url %>" target= '_blank' >View App</a>
             <br />
             <br />
           <% else %>
             <%= simple_format project.description %>
-            <a href="<%= project.site_url %>">View Site</a>
+            <a target= '_blank' href="<%= project.site_url %>">View Site</a>
             <br />
             <br />
           <% end %>
           <% if project.github.present? %>
-            <a href="<%= project.github %>">View on GitHub</a>
+            <a href="<%= project.github %>" target= '_blank'>View on GitHub</a>
           <% end %>
         </div>
       </div>
