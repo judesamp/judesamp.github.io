@@ -1,4 +1,17 @@
 -
+  name: WineByOwner
+  url: http://winebyowner.com
+  github:
+  screenshot: winebyowner.png
+  featured: true
+  description: |
+                 An app that connects wine enthusiasts, making it easy for them to buy and sell wine from one another. 
+
+                 I helped build this app as part of the team at 10 Rocket. It helps buyers find nearby sellers using the Geocoder gem, processes and manages subscriptions using Stripe, and stores images on S3 with a little assist from the Carrierwave and Fog gems. 
+
+                 * This code lives in a private repository. Code samples available upon request.
+
+-
   name: LoveLetterMashup
   url: http://lovelettermashup.com
   github: https://github.com/judesamp/love_letter_mashup
@@ -9,16 +22,6 @@
 
                  This app includes the ability to sign up using the Omniauth strategies for both Twitter and Facebook. It hooks into the Lob API to facilitate the sending of love letters via snail mail and uses the Prawn gem to create a pdf for printing purposes. Also employs Stripe to process payments. 
 
--
-  name: IronBaseOne
-  url: http://ironbase.herokuapp.com
-  github: https://github.com/judesamp/ironbase
-  screenshot: ironbase.png
-  featured: true
-  description: |
-                 An assignment/homework management app designed with The Iron Yard's process in mind. Includes the following features: admin and student workflows, the ability to make and turn in assignments, a comment and email system that makes room for general discussion of assignments as well as private discussions between teacher and student regarding specific homework. 
-
-                 Makes use of Devise, CanCanCan, and Workflow gems to make all of this go.
 - 
   name: Running Log
   url: http://simplerunninglog.herokuapp.com
